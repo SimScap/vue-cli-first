@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <h1>La mia prima app con Vue CLI</h1>
+    <h1>{{ message }}</h1>
     <img alt="Vue logo" src="./assets/logo.png" />
   </div>
 </template>
@@ -8,6 +8,11 @@
 <script>
 export default {
   name: "App",
+  data() {
+    return {
+      message: `La mia prima app con Vue CLI`,
+    };
+  },
 };
 </script>
 
